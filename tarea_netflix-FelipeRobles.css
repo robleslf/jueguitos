@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100&family=Rubik+Maps&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body {
+    background: linear-gradient(135deg, #23449e, #1f1f36);
+}
+
+
+h1 {
+    font-family: "Rubik Maps", Courier, monospace;
+    font-size: 50PX;
+    margin-left: 20px;
+    transform: rotate(-12deg);
+    top: 100px;
+    position: absolute;
+}
+
+h1:hover {
+    animation: pulsate 1s infinite alternate;
+}
+
+@keyframes pulsate {
+    0% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+h1 a {
+    text-decoration: none;
+    color: yellow;
+    position: fixed;
+}
+
+#minititulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: bold;
+    font-family: "Rubik Maps";
+    margin-left: -80px;
+    }
+
+h2 {
+    font-size: 40px;
+    color: antiquewhite;
+}
+
+.show {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Acme', Courier, monospace;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 75%;
+    margin: auto;
+
+}
+
+.hover {
+    transition: 0.5s ease;
+    border: 3px solid black;
+    border-radius: 15px;
+    filter: grayscale(70%);
+    height: 200px;
+    width: 175px;
+}
+
+.hover:hover {
+    filter: grayscale(0%);
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-weight: bold;
+  font-family: "Acme", 'Courier New', Courier, monospace;
+}
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    transition: all 0.3s ease 0s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    margin-top: 50px;
+}
+
+nav li input {
+    background-color: #1f1f36;
+    border-radius: 15px;
+    color: antiquewhite;
+    font-family: "Acme", 'Courier New', Courier, monospace;
+    transition: 0.5s ease;
+}
+
+nav li input:hover {
+    background-color: #412d2d;
+    transform: scale(1.2);
+    transform: rotate(-2deg);
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 8px #ddd;
+    text-align: center;
+
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#logo-nerflis {
+    width: 100px !important;
+    width: 60px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 50px;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+
+.agitar:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  
+  }
+
+  #minititulo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+header ul li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+  /*
+Puntos de ruptura de dispositivos más pequeños a más grandes: ;
+Normalmente será el que utilicemos
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 120l0px) { ... }
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*/
+
+/*
+Puntos de ruptura de dispositivos más grandes a más pequeños: ;
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+*/
+
+
+/* hacemos un diseño responsive desde dispositivos 
+de móviles (muy pequeños) a dispositvos de escritorio (muy grandes) */
+
+
+
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (max-width: 416px) { 
+    .box {
+        flex-basis: 50%;
+    }
+
+    .parent {
+        width: 95%;
+    }
+
+
+    .agitar {
+            display:none
+        }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+    
+ }
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (max-width: 576px) { 
+    .box {
+        flex-basis: 50%;
+    }
+
+    .parent {
+        width: 95%;
+    }
+
+
+    .agitar {
+            display:none
+        }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+    
+ }
+
+ @media (min-width: 576px) { 
+    #minititulo {
+            display:none
+        }
+ 
+  /*Medium devices (tablets, 768px and up)*/
+ @media (max-width: 768px) { 
+    .box {
+        flex-basis: 33.33%;
+    }
+
+    .parent {
+        width: 90%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+
+ }
+ 
+  /*Large devices (desktops, 992px and up)*/
+ @media (max-width: 992px) { 
+    .box {
+        flex-basis: 25%;
+    }
+
+    .parent {
+        width: 85%;
+    }
+
+    #three{
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.25rem;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+ 
+ }
+ 
+  /*X-Large devices (large desktops, 1200px and up)*/
+ @media (max-width: 1200px) { 
+    .box {
+        flex-basis: 16%;
+    }
+
+
+ }
+ 
+  /*XX-Large devices (larger desktops, 1400px and up)*/
+ @media (max-width: 1400px) { 
+    .box {
+        flex-basis: 16%;
+    }
+
+ 
+ }
+
+ @media (max-width: 1400px) { 
+    .box {
+        flex-basis: 16%;
+    }
+
+ 
+}
